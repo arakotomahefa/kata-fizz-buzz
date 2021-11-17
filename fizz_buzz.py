@@ -1,9 +1,10 @@
-def return_fizz(number):
+def buzz_fizz(number):
     if number % 3 == 0:
+        if number % 5 == 0:
+            return ("FizzBuzz")
         return ("Fizz")
-
-def return_buzz(number):
-    if number % 5 == 0:
+    elif number % 5 == 0:
         return ("Buzz")
+    return (number)
 
 
