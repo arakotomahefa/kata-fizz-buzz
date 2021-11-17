@@ -1,10 +1,16 @@
 def buzz_fizz(number):
-    if number % 3 == 0:
-        if number % 5 == 0:
+    if divisible_by_3:
+        if divisible_by_5(number):
             return ("FizzBuzz")
         return ("Fizz")
-    elif number % 5 == 0:
+    elif divisible_by_5(number):
         return ("Buzz")
     return (number)
+
+def divisible_by_5(number):
+    number % 5 == 0
+
+def divisible_by_3(number):
+    number % 3 == 0
 
 
