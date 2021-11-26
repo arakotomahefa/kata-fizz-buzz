@@ -1,16 +1,17 @@
-def buzz_fizz(number):
-    if divisible_by_3:
-        if divisible_by_5(number):
-            return ("FizzBuzz")
-        return ("Fizz")
-    elif divisible_by_5(number):
-        return ("Buzz")
-    return (number)
+def fizz_buzz(number):
+    if divisible_by_3(number) and divisible_by_5(number):
+        return "FizzBuzz"
+    if divisible_by_3(number):
+        return "Fizz"
+    if divisible_by_5(number):
+        return "Buzz"
+    else :
+        return str(number)
 
 def divisible_by_5(number):
-    number % 5 == 0
+    return number % 5 == 0
 
 def divisible_by_3(number):
-    number % 3 == 0
+    return number % 3 == 0
 
 
